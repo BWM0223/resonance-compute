@@ -1,0 +1,48 @@
+======================================================================
+RESONANCE HEAVY COMPUTE — dominant-gap enumeration (no fitting)
+run: 2026-06-14T22:05:17.559112Z   φ=1.618033988749895  ρ_A*=1/φ²=0.381966
+======================================================================
+
+--- Fibonacci Hamiltonian N=1597 ---
+top 12 DOMINANT gaps (widest), with their TRUE gap labels:
+    width     IDOS label n    resid    depth
+   0.8214   0.3820       1   0.0000    0.409
+   0.6475   0.6180      -1   0.0000    0.903
+   0.2126   0.7639       2   0.0000    3.218
+   0.2094   0.2361      -2   0.0000    3.249
+   0.1787   0.3813       1   0.0006    3.579
+   0.1368   0.4721      -4   0.0000    4.134
+   0.1024   0.5279       4   0.0000    4.736
+   0.0998   0.7646       2   0.0006    4.790
+   0.0914   0.8541      -3   0.0000    4.971
+   0.0777   0.3826       1   0.0006    5.311
+   0.0761   0.1453       3   0.0006    5.353
+   0.0679   0.7082      -6   0.0000    5.589
+dominant-gap labels in width order: [1, -1, 2, -2, 1, -4, 4, 2, -3, 1, 3, -6]
+PROOF_FINAL needs generations at labels n = 0, -1, -5.
+  n=0  among top-12 dominant? False
+  n=-1 among top-12 dominant? True
+  n=-5 among top-12 dominant? False
+  VERDICT: if -5 is NOT a dominant gap, the tau label was fitted, not selected.
+
+--- Fibonacci Hamiltonian N=6765 ---
+top 12 DOMINANT gaps (widest), with their TRUE gap labels:
+    width     IDOS label n    resid    depth
+   0.8991   0.3821       1   0.0001    0.221
+   0.6475   0.6180      -1   0.0000    0.903
+   0.3123   0.7641       2   0.0001    2.418
+   0.2094   0.2361      -2   0.0000    3.249
+   0.1787   0.3818       1   0.0001    3.579
+   0.1585   0.5280       4   0.0001    3.828
+   0.1368   0.4721      -4   0.0000    4.135
+   0.0914   0.8541      -3   0.0000    4.972
+   0.0761   0.1458       3   0.0001    5.353
+   0.0678   0.7082      -6   0.0000    5.591
+   0.0538   0.6739       7   0.0001    6.074
+   0.0508   0.1460       3   0.0001    6.192
+dominant-gap labels in width order: [1, -1, 2, -2, 1, 4, -4, -3, 3, -6, 7, 3]
+PROOF_FINAL needs generations at labels n = 0, -1, -5.
+  n=0  among top-12 dominant? False
+  n=-1 among top-12 dominant? True
+  n=-5 among top-12 dominant? False
+  VERDICT: if -5 is NOT a dominant gap, the tau label was fitted, not selected.
