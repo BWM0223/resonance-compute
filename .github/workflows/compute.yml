@@ -1,0 +1,18 @@
+name: compute
+on: {workflow_dispatch: {}, schedule: [{cron: "0 7 * * *"}]}
+permissions: {contents: write}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install numpy scipy
+      - run: python3 resonance_compute.py
+      - run: |
+          git config user.name bot
+          git config user.email bot@local
+          git add resonance_results.txt || true
+          git diff --cached --quiet || (git commit -m "results" && git push)
